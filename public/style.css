@@ -21,6 +21,13 @@ body {
   background-color: var(--primary);
   border: none;
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
 a.nav-link {
   color: var(--warning) !important;
 }
@@ -140,6 +147,21 @@ a.nav-link {
 
 #contact input.form-control {
   height: 44px;
+}
+.transportation {
+  text-align: center;
+}
+#cities {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.c-btn {
+  background-color: #008b8b;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  color: #ffc107;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {

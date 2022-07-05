@@ -68,7 +68,7 @@ app
       }
     );
 
-    res.end("Added user");
+    res.end("Added User");
   })
 
   .listen(port, () => console.log(`Server listening on port ${port}`));
