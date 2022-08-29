@@ -88,7 +88,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            src="../img/ella-ivanescu-JbfhNrpQ_dw-unsplash.jpg"
+            src="./img/ella-ivanescu-JbfhNrpQ_dw-unsplash.jpg"
             class="d-block w-100"
             alt="..."
           />
@@ -111,7 +111,7 @@
         </div>
         <div class="carousel-item">
           <img
-            src="../img/nik-shuliahin-nMsDpoJVO94-unsplash.jpg"
+            src="./img/nik-shuliahin-nMsDpoJVO94-unsplash.jpg"
             class="d-block w-100"
             alt="..."
           />
@@ -134,7 +134,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="../img/noaa-NBwP2jjnATE-unsplash.jpg "d-block w-100"
+          <img src="./img/noaa-NBwP2jjnATE-unsplash.jpg "d-block w-100"
           alt="..." />
           <div class="carousel-caption">
             <h5>pollution very bad</h5>
@@ -183,7 +183,7 @@
           <div class="col-lg-4 col-md-12 col-12">
             <div class="about-img">
               <img
-                src="../img/callum-shaw-qA1USkWjq8w-unsplash.jpg"
+                src="./img/callum-shaw-qA1USkWjq8w-unsplash.jpg"
                 alt=""
                 class="img-fluid"
               />
@@ -195,10 +195,10 @@
               <p>
                 Our goal with this website is to bring awareness about air
                 pollution and provide solutions on what we can do to help with
-                the significant deterioration of our air quality. We believe that
-                spreading awareness about our state of the earth is one of the
-                single most imporant things you can do to help when it comes to
-                making a difference.
+                the significant deterioration of our air quality. We believe
+                that spreading awareness about our state of the earth is one of
+                the single most imporant things you can do to help when it comes
+                to making a difference.
               </p>
               <a
                 href="https://www.peopleinneed.net/raising-awareness-about-air-pollution-in-one-of-the-most-polluted-cities-in-the-world-5938gp"
@@ -503,7 +503,7 @@
               <div class="card-body text-dark">
                 <div class="img-area mb-4">
                   <img
-                    src="../img/markus-spiske-r1BS0pzlr1M-unsplash.jpg"
+                    src="./img/markus-spiske-r1BS0pzlr1M-unsplash.jpg"
                     class="img-fluid"
                     alt=""
                     style="height: 300px"
@@ -529,7 +529,7 @@
               <div class="card-body text-dark">
                 <div class="img-area mb-4">
                   <img
-                    src="../img/eyoel-kahssay-FyCjvyPG9Pg-unsplash.jpg"
+                    src="./img/eyoel-kahssay-FyCjvyPG9Pg-unsplash.jpg"
                     class="img-fluid"
                     alt=""
                   />
@@ -549,7 +549,7 @@
               <div class="card-body text-dark">
                 <div class="img-area mb-4">
                   <img
-                    src="../img/myenergi-kfl3k35vMjw-unsplash.jpg"
+                    src="./img/myenergi-kfl3k35vMjw-unsplash.jpg"
                     class="img-fluid"
                     alt=""
                   />
@@ -590,14 +590,13 @@
         >
       </li>
     </ul>
-  <!-- Cities ends -->
+    <!-- Cities ends -->
     <!-- Contact starts -->
 
     <section id="contact" class="full-height px-lg-5 mb-3">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-8 pb-4" data-aos="fade-up">
-           
             <h1>Subscribe to Our Newsletter!</h1>
           </div>
 
@@ -660,7 +659,7 @@
     <!-- All Js -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
-      var map = new google.maps.Map(document.getElementById("map"), {
+      var map = new google.maps.Map(document.getElementById('map'), {
         center: new google.maps.LatLng(35.2271, -80.8431),
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         zoom: 11,
@@ -670,16 +669,16 @@
       var waqiMapOverlay = new google.maps.ImageMapType({
         getTileUrl: function (coord, zoom) {
           return (
-            "https://tiles.aqicn.org/tiles/usepa-aqi/" +
+            'https://tiles.aqicn.org/tiles/usepa-aqi/' +
             zoom +
-            "/" +
+            '/' +
             coord.x +
-            "/" +
+            '/' +
             coord.y +
-            ".png?token=_TOKEN_ID_"
+            '.png?token=_TOKEN_ID_'
           );
         },
-        name: "Air  Quality",
+        name: 'Air  Quality',
       });
 
       map.overlayMapTypes.insertAt(0, waqiMapOverlay);
